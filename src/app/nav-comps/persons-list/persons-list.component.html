@@ -1,0 +1,11 @@
+<p>persons-list works!</p>
+
+<button (click)="showJirrafs = !showJirrafs">change to jirrafs</button>
+
+<ul *ngIf="!showJirrafs">
+    <li *ngFor="let s of db.db.students">{{s.name}} - {{s.age}}</li>
+</ul>
+
+<ul *ngIf="showJirrafs">
+    <li *ngFor="let s of db.db.jiraffs">{{s.name}} - {{s.age}}</li>
+</ul>
