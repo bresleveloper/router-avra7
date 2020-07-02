@@ -15,6 +15,10 @@ import { OtherWrapperComponent } from './nav-comps/other-wrapper/other-wrapper.c
 import { OtherC1Component } from './nav-comps/other-c1/other-c1.component';
 import { OtherC2Component } from './nav-comps/other-c2/other-c2.component';
 import { OtherC3Component } from './nav-comps/other-c3/other-c3.component';
+import { AComponent } from './fix-img-comps/a/a.component';
+import { BComponent } from './fix-img-comps/b/b.component';
+import { CComponent } from './fix-img-comps/c/c.component';
+import { HomeComponent } from './fix-img-comps/home/home.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,11 @@ import { OtherC3Component } from './nav-comps/other-c3/other-c3.component';
     OtherWrapperComponent,
     OtherC1Component,
     OtherC2Component,
-    OtherC3Component
+    OtherC3Component,
+    AComponent,
+    BComponent,
+    CComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
