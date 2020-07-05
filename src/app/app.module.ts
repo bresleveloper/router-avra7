@@ -19,6 +19,12 @@ import { AComponent } from './fix-img-comps/a/a.component';
 import { BComponent } from './fix-img-comps/b/b.component';
 import { CComponent } from './fix-img-comps/c/c.component';
 import { HomeComponent } from './fix-img-comps/home/home.component';
+import { C1ShowInterfacesComponent } from './life-cycle/c1-show-interfaces/c1-show-interfaces.component';
+import { C2ShowChildRefComponent } from './life-cycle/c2-show-child-ref/c2-show-child-ref.component';
+import { C3ValueChangesComponent } from './life-cycle/c3-value-changes/c3-value-changes.component';
+import { C4ParentComponent } from './life-cycle/c4-parent/c4-parent.component';
+import { C5ChildComponent } from './life-cycle/c5-child/c5-child.component';
+import { C6GrandsonComponent } from './life-cycle/c6-grandson/c6-grandson.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +42,13 @@ import { HomeComponent } from './fix-img-comps/home/home.component';
     AComponent,
     BComponent,
     CComponent,
-    HomeComponent
+    HomeComponent,
+    C1ShowInterfacesComponent,
+    C2ShowChildRefComponent,
+    C3ValueChangesComponent,
+    C4ParentComponent,
+    C5ChildComponent,
+    C6GrandsonComponent
   ],
   imports: [
     BrowserModule,

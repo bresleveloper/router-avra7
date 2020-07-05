@@ -11,6 +11,10 @@ import { HomeComponent } from './fix-img-comps/home/home.component';
 import { AComponent } from './fix-img-comps/a/a.component';
 import { BComponent } from './fix-img-comps/b/b.component';
 import { CComponent } from './fix-img-comps/c/c.component';
+import { C1ShowInterfacesComponent } from './life-cycle/c1-show-interfaces/c1-show-interfaces.component';
+import { C2ShowChildRefComponent } from './life-cycle/c2-show-child-ref/c2-show-child-ref.component';
+import { C3ValueChangesComponent } from './life-cycle/c3-value-changes/c3-value-changes.component';
+import { C4ParentComponent } from './life-cycle/c4-parent/c4-parent.component';
 
 
 const routes: Routes = [  
@@ -42,6 +46,16 @@ const routes: Routes = [
     ],
   },
 
+  
+  { path:'life-cycle', component:OtherWrapperComponent ,
+    children:[
+        { path:'interfaces',      component:C1ShowInterfacesComponent},
+        { path:'child-ref',     component:C2ShowChildRefComponent},
+        { path:'change-value',     component:C3ValueChangesComponent},
+        { path:'parent-child-GS',     component:C4ParentComponent},
+        { path:'',          redirectTo:'interfaces', pathMatch: 'full'},
+    ],
+  },
 
 
 
