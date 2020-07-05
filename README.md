@@ -1,5 +1,11 @@
 # RouterAvra7
 
+`ng build --output-path docs --base-href https://bresleveloper.github.io/router-avra7/`
+
+repo: `https://github.com/bresleveloper/router-avra7/`
+
+[see live](https://bresleveloper.github.io/router-avra7/)
+
 
 # Life Cycle
 
