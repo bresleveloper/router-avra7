@@ -7,6 +7,12 @@ repo: `https://github.com/bresleveloper/router-avra7/`
 [see live](https://bresleveloper.github.io/router-avra7/)
 
 
+# router - as is in router module
+
+# Pipes 
+in `pipes` folder you have the comp and the pipes examples
+
+
 # Life Cycle
 
 1. `c1-show-interfaces.component` - just showing the life cycle

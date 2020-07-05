@@ -25,6 +25,10 @@ import { C3ValueChangesComponent } from './life-cycle/c3-value-changes/c3-value-
 import { C4ParentComponent } from './life-cycle/c4-parent/c4-parent.component';
 import { C5ChildComponent } from './life-cycle/c5-child/c5-child.component';
 import { C6GrandsonComponent } from './life-cycle/c6-grandson/c6-grandson.component';
+import { PipeCompComponent } from './pipes/pipe-comp/pipe-comp.component';
+import { ToIntPipe } from './pipes/to-int.pipe';
+import { DateToAgePipe } from './pipes/date-to-age.pipe';
+import { FromServiceAndParamsPipe } from './pipes/from-service-and-params.pipe';
 
 @NgModule({
   declarations: [
@@ -48,7 +52,11 @@ import { C6GrandsonComponent } from './life-cycle/c6-grandson/c6-grandson.compon
     C3ValueChangesComponent,
     C4ParentComponent,
     C5ChildComponent,
-    C6GrandsonComponent
+    C6GrandsonComponent,
+    PipeCompComponent,
+    ToIntPipe,
+    DateToAgePipe,
+    FromServiceAndParamsPipe
   ],
   imports: [
     BrowserModule,

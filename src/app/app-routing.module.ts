@@ -15,6 +15,7 @@ import { C1ShowInterfacesComponent } from './life-cycle/c1-show-interfaces/c1-sh
 import { C2ShowChildRefComponent } from './life-cycle/c2-show-child-ref/c2-show-child-ref.component';
 import { C3ValueChangesComponent } from './life-cycle/c3-value-changes/c3-value-changes.component';
 import { C4ParentComponent } from './life-cycle/c4-parent/c4-parent.component';
+import { PipeCompComponent } from './pipes/pipe-comp/pipe-comp.component';
 
 
 const routes: Routes = [  
@@ -56,6 +57,8 @@ const routes: Routes = [
         { path:'',          redirectTo:'interfaces', pathMatch: 'full'},
     ],
   },
+
+  { path:'pipes', component:PipeCompComponent },
 
 
 

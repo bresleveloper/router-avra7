@@ -50,6 +50,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _life_cycle_c2_show_child_ref_c2_show_child_ref_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./life-cycle/c2-show-child-ref/c2-show-child-ref.component */ "./src/app/life-cycle/c2-show-child-ref/c2-show-child-ref.component.ts");
 /* harmony import */ var _life_cycle_c3_value_changes_c3_value_changes_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./life-cycle/c3-value-changes/c3-value-changes.component */ "./src/app/life-cycle/c3-value-changes/c3-value-changes.component.ts");
 /* harmony import */ var _life_cycle_c4_parent_c4_parent_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./life-cycle/c4-parent/c4-parent.component */ "./src/app/life-cycle/c4-parent/c4-parent.component.ts");
+/* harmony import */ var _pipes_pipe_comp_pipe_comp_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./pipes/pipe-comp/pipe-comp.component */ "./src/app/pipes/pipe-comp/pipe-comp.component.ts");
+
 
 
 
@@ -102,6 +104,7 @@ const routes = [
             { path: '', redirectTo: 'interfaces', pathMatch: 'full' },
         ],
     },
+    { path: 'pipes', component: _pipes_pipe_comp_pipe_comp_component__WEBPACK_IMPORTED_MODULE_17__["PipeCompComponent"] },
     { path: '', redirectTo: 'db', pathMatch: 'full' },
     { path: '**', redirectTo: 'db', pathMatch: 'full' },
 ];
@@ -144,7 +147,7 @@ class AppComponent {
     }
 }
 AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(); };
-AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 23, vars: 7, consts: [[3, "routerLink"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
+AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 26, vars: 8, consts: [[3, "routerLink"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "li");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "a", 0);
@@ -163,26 +166,31 @@ AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCompo
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "li");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "a", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, "life-cycle interface");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, "pipes");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "li");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "a", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15, "life-cycle child-ref");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15, "life-cycle interface");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "li");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "a", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](18, "life-cycle change-value");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](18, "life-cycle child-ref");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "li");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "a", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "life-cycle parent-child-grandson");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "life-cycle change-value");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "li");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "a", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](24, "life-cycle parent-child-grandson");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](22, "router-outlet");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](25, "router-outlet");
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", "db");
@@ -190,6 +198,8 @@ AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCompo
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", "other");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", "fix-img");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", "pipes");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", "life-cycle/interfaces");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
@@ -246,6 +256,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _life_cycle_c4_parent_c4_parent_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./life-cycle/c4-parent/c4-parent.component */ "./src/app/life-cycle/c4-parent/c4-parent.component.ts");
 /* harmony import */ var _life_cycle_c5_child_c5_child_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./life-cycle/c5-child/c5-child.component */ "./src/app/life-cycle/c5-child/c5-child.component.ts");
 /* harmony import */ var _life_cycle_c6_grandson_c6_grandson_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./life-cycle/c6-grandson/c6-grandson.component */ "./src/app/life-cycle/c6-grandson/c6-grandson.component.ts");
+/* harmony import */ var _pipes_pipe_comp_pipe_comp_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./pipes/pipe-comp/pipe-comp.component */ "./src/app/pipes/pipe-comp/pipe-comp.component.ts");
+/* harmony import */ var _pipes_to_int_pipe__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./pipes/to-int.pipe */ "./src/app/pipes/to-int.pipe.ts");
+/* harmony import */ var _pipes_date_to_age_pipe__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./pipes/date-to-age.pipe */ "./src/app/pipes/date-to-age.pipe.ts");
+/* harmony import */ var _pipes_from_service_and_params_pipe__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./pipes/from-service-and-params.pipe */ "./src/app/pipes/from-service-and-params.pipe.ts");
+
+
+
+
 
 
 
@@ -300,7 +318,11 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
         _life_cycle_c3_value_changes_c3_value_changes_component__WEBPACK_IMPORTED_MODULE_21__["C3ValueChangesComponent"],
         _life_cycle_c4_parent_c4_parent_component__WEBPACK_IMPORTED_MODULE_22__["C4ParentComponent"],
         _life_cycle_c5_child_c5_child_component__WEBPACK_IMPORTED_MODULE_23__["C5ChildComponent"],
-        _life_cycle_c6_grandson_c6_grandson_component__WEBPACK_IMPORTED_MODULE_24__["C6GrandsonComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
+        _life_cycle_c6_grandson_c6_grandson_component__WEBPACK_IMPORTED_MODULE_24__["C6GrandsonComponent"],
+        _pipes_pipe_comp_pipe_comp_component__WEBPACK_IMPORTED_MODULE_25__["PipeCompComponent"],
+        _pipes_to_int_pipe__WEBPACK_IMPORTED_MODULE_26__["ToIntPipe"],
+        _pipes_date_to_age_pipe__WEBPACK_IMPORTED_MODULE_27__["DateToAgePipe"],
+        _pipes_from_service_and_params_pipe__WEBPACK_IMPORTED_MODULE_28__["FromServiceAndParamsPipe"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
         _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"],
         _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"]] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
@@ -327,7 +349,11 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
                     _life_cycle_c3_value_changes_c3_value_changes_component__WEBPACK_IMPORTED_MODULE_21__["C3ValueChangesComponent"],
                     _life_cycle_c4_parent_c4_parent_component__WEBPACK_IMPORTED_MODULE_22__["C4ParentComponent"],
                     _life_cycle_c5_child_c5_child_component__WEBPACK_IMPORTED_MODULE_23__["C5ChildComponent"],
-                    _life_cycle_c6_grandson_c6_grandson_component__WEBPACK_IMPORTED_MODULE_24__["C6GrandsonComponent"]
+                    _life_cycle_c6_grandson_c6_grandson_component__WEBPACK_IMPORTED_MODULE_24__["C6GrandsonComponent"],
+                    _pipes_pipe_comp_pipe_comp_component__WEBPACK_IMPORTED_MODULE_25__["PipeCompComponent"],
+                    _pipes_to_int_pipe__WEBPACK_IMPORTED_MODULE_26__["ToIntPipe"],
+                    _pipes_date_to_age_pipe__WEBPACK_IMPORTED_MODULE_27__["DateToAgePipe"],
+                    _pipes_from_service_and_params_pipe__WEBPACK_IMPORTED_MODULE_28__["FromServiceAndParamsPipe"]
                 ],
                 imports: [
                     _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -1478,6 +1504,217 @@ C3Component.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCompon
                 styleUrls: ['./c3.component.css']
             }]
     }], function () { return []; }, null); })();
+
+
+/***/ }),
+
+/***/ "./src/app/pipes/date-to-age.pipe.ts":
+/*!*******************************************!*\
+  !*** ./src/app/pipes/date-to-age.pipe.ts ***!
+  \*******************************************/
+/*! exports provided: DateToAgePipe */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DateToAgePipe", function() { return DateToAgePipe; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+
+
+class DateToAgePipe {
+    transform(value) {
+        let y = new Date().getFullYear();
+        return y - value.getFullYear();
+    }
+}
+DateToAgePipe.ɵfac = function DateToAgePipe_Factory(t) { return new (t || DateToAgePipe)(); };
+DateToAgePipe.ɵpipe = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefinePipe"]({ name: "dateToAge", type: DateToAgePipe, pure: true });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](DateToAgePipe, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Pipe"],
+        args: [{
+                name: 'dateToAge'
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "./src/app/pipes/from-service-and-params.pipe.ts":
+/*!*******************************************************!*\
+  !*** ./src/app/pipes/from-service-and-params.pipe.ts ***!
+  \*******************************************************/
+/*! exports provided: FromServiceAndParamsPipe */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FromServiceAndParamsPipe", function() { return FromServiceAndParamsPipe; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var _services_db_json_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../services/db-json.service */ "./src/app/services/db-json.service.ts");
+
+
+
+class FromServiceAndParamsPipe {
+    /*"students":[
+      { "name":"ariel", "age" : 35},*/
+    constructor(svc) {
+        this.svc = svc;
+        console.log('FromServiceAndParamsPipe constructor');
+    }
+    //transform(tableName: string, ...args: unknown[]): unknown {
+    transform(tableName, index) {
+        console.log('FromServiceAndParamsPipe transform');
+        //args[0]
+        let x = this.svc.db[tableName][index];
+        return `<span class="fromSvcPipe">${x.name} - ${x.age}</span>`;
+    }
+}
+FromServiceAndParamsPipe.ɵfac = function FromServiceAndParamsPipe_Factory(t) { return new (t || FromServiceAndParamsPipe)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_db_json_service__WEBPACK_IMPORTED_MODULE_1__["DbJsonService"])); };
+FromServiceAndParamsPipe.ɵpipe = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefinePipe"]({ name: "fromServiceAndParams", type: FromServiceAndParamsPipe, pure: true });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](FromServiceAndParamsPipe, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Pipe"],
+        args: [{
+                name: 'fromServiceAndParams'
+            }]
+    }], function () { return [{ type: _services_db_json_service__WEBPACK_IMPORTED_MODULE_1__["DbJsonService"] }]; }, null); })();
+
+
+/***/ }),
+
+/***/ "./src/app/pipes/pipe-comp/pipe-comp.component.ts":
+/*!********************************************************!*\
+  !*** ./src/app/pipes/pipe-comp/pipe-comp.component.ts ***!
+  \********************************************************/
+/*! exports provided: PipeCompComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PipeCompComponent", function() { return PipeCompComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var _to_int_pipe__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../to-int.pipe */ "./src/app/pipes/to-int.pipe.ts");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
+/* harmony import */ var _date_to_age_pipe__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../date-to-age.pipe */ "./src/app/pipes/date-to-age.pipe.ts");
+/* harmony import */ var _from_service_and_params_pipe__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../from-service-and-params.pipe */ "./src/app/pipes/from-service-and-params.pipe.ts");
+
+
+
+
+
+
+class PipeCompComponent {
+    constructor() {
+        this.today = new Date();
+        let d = new Date();
+        d.setFullYear(1984);
+        this.someBD = d;
+    }
+    ngOnInit() {
+    }
+}
+PipeCompComponent.ɵfac = function PipeCompComponent_Factory(t) { return new (t || PipeCompComponent)(); };
+PipeCompComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: PipeCompComponent, selectors: [["app-pipe-comp"]], decls: 31, vars: 32, consts: [[3, "input"], [3, "innerHTML"]], template: function PipeCompComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "pipe-comp works!");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](4, "toInt");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "input", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("input", function PipeCompComponent_Template_input_input_6_listener($event) { return ctx.ipt1Val = $event.target.value; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](7, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](9, "toInt");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](10, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](12, "currency");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](13, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](15, "currency");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](16, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](18, "date");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](19, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](20);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](21, "date");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](22, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](24, "dateToAge");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](25, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](27, "fromServiceAndParams");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](28, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](29, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](30, "fromServiceAndParams");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](4, 9, "55"), "\n");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" toint: ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](9, 11, ctx.ipt1Val), "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" currency: ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](12, 13, ctx.ipt1Val), "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" currency ILS: ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](15, 15, ctx.ipt1Val, "ILS"), "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" date short: ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](18, 18, ctx.today, "short"), "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" date dd/MM/yy: ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](21, 21, ctx.today, "dd/MM/yy"), "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" toAge: ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](24, 24, ctx.someBD), "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" fromServiceAndParams: ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](27, 26, "jiraffs", 2), "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("innerHTML", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](30, 29, "jiraffs", 2), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeHtml"]);
+    } }, pipes: [_to_int_pipe__WEBPACK_IMPORTED_MODULE_1__["ToIntPipe"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["CurrencyPipe"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["DatePipe"], _date_to_age_pipe__WEBPACK_IMPORTED_MODULE_3__["DateToAgePipe"], _from_service_and_params_pipe__WEBPACK_IMPORTED_MODULE_4__["FromServiceAndParamsPipe"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BpcGVzL3BpcGUtY29tcC9waXBlLWNvbXAuY29tcG9uZW50LmNzcyJ9 */"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](PipeCompComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'app-pipe-comp',
+                templateUrl: './pipe-comp.component.html',
+                styleUrls: ['./pipe-comp.component.css']
+            }]
+    }], function () { return []; }, null); })();
+
+
+/***/ }),
+
+/***/ "./src/app/pipes/to-int.pipe.ts":
+/*!**************************************!*\
+  !*** ./src/app/pipes/to-int.pipe.ts ***!
+  \**************************************/
+/*! exports provided: ToIntPipe */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ToIntPipe", function() { return ToIntPipe; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+
+
+class ToIntPipe {
+    transform(value) {
+        let x = parseInt(value);
+        console.log('ToIntPipe - ' + value, x);
+        if (isNaN(x)) {
+            return -1;
+        }
+        else {
+            return x;
+        }
+    }
+}
+ToIntPipe.ɵfac = function ToIntPipe_Factory(t) { return new (t || ToIntPipe)(); };
+ToIntPipe.ɵpipe = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefinePipe"]({ name: "toInt", type: ToIntPipe, pure: true });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ToIntPipe, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Pipe"],
+        args: [{
+                name: 'toInt'
+            }]
+    }], null, null); })();
 
 
 /***/ }),

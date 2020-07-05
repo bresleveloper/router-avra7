@@ -1,0 +1,27 @@
+<p>pipe-comp works!</p>
+
+
+<div>
+    {{ '55' | toInt }}
+</div>
+
+
+<div>
+    <input  (input)="ipt1Val = $event.target.value" /> <br>
+    toint:              {{ ipt1Val | toInt }}<br>
+    currency:           {{ ipt1Val | currency }}<br>
+    currency ILS:       {{ ipt1Val | currency:'ILS' }}<br>
+    date short:         {{ today | date:'short'}}<br>
+    date dd/MM/yy:      {{ today | date:'dd/MM/yy'}}<br>
+    toAge:              {{ someBD | dateToAge }}<br>
+
+    fromServiceAndParams:              {{ "jiraffs" | fromServiceAndParams:2 }}<br>
+    <div [innerHTML]="'jiraffs' | fromServiceAndParams:2"></div>
+
+
+
+    
+
+</div>
+
+
